@@ -1,8 +1,10 @@
 //import { myFunction } from "./lib/index.js";
 import { welcome } from './lib/view/templateBienvenida.js';
+import { editProfile } from './lib/view/templateEditarPerfil.js';
 import { logIn } from './lib/view/templateIngresoUsuaria.js';
 import { signUp } from './lib/view/templateRegistroUsuaria.js';
 import { tutorial } from './lib/view/templateTutorial.js';
+import { channels } from './lib/view/templateCanales.js';
 
 console.log("Hello!")
 
@@ -15,6 +17,8 @@ document.getElementById("root").appendChild(welcome());
 document.getElementById("root").appendChild(logIn());
 document.getElementById("root").appendChild(signUp());
 document.getElementById("root").appendChild(tutorial());
+document.getElementById("root").appendChild(editProfile());
+document.getElementById("root").appendChild(channels());
 // const init = () => {
 //     router("login");
 //   window.addEventListener("hashchange", () => {
