@@ -1,0 +1,16 @@
+p {
+    color: cornflowerblue;
+}
+h1 {
+    color:blue;
+}
+h2 {
+    color:darkgreen;
+}
+button {
+    background-color: darksalmon;
+    color:dimgray;
+    box-shadow: 2px 2px 5px #999;
+    border-radius: 5px;
+    border: none;
+}
