@@ -8,6 +8,10 @@ import { channels } from './lib/view/templateCanales.js';
 import { profile } from './lib/view/templatePerfil.js';
 import { community } from './lib/view/templateComunidad.js';
 import { communitySearch } from './lib/view/templateComunidadBuscador.js';
+import { passwordReset } from './lib/view/templateRecuperarContrasena.js';
+import { inbox } from './lib/view/templateMensajes.js';
+import { message } from './lib/view/templateEnviarMensaje.js';
+import { language } from './lib/view/templateIdioma.js';
 
 console.log("Hello!")
 
@@ -17,7 +21,9 @@ console.log("Hello!")
 // };
 
 document.getElementById("root").appendChild(welcome());
+document.getElementById("root").appendChild(language());
 document.getElementById("root").appendChild(logIn());
+document.getElementById("root").appendChild(passwordReset());
 document.getElementById("root").appendChild(signUp());
 document.getElementById("root").appendChild(tutorial());
 document.getElementById("root").appendChild(editProfile());
@@ -25,6 +31,8 @@ document.getElementById("root").appendChild(channels());
 document.getElementById("root").appendChild(profile());
 document.getElementById("root").appendChild(community());
 document.getElementById("root").appendChild(communitySearch());
+document.getElementById("root").appendChild(inbox());
+document.getElementById("root").appendChild(message());
 // const init = () => {
 //     router("login");
 //   window.addEventListener("hashchange", () => {
