@@ -5,6 +5,9 @@ import { logIn } from './lib/view/templateIngresoUsuaria.js';
 import { signUp } from './lib/view/templateRegistroUsuaria.js';
 import { tutorial } from './lib/view/templateTutorial.js';
 import { channels } from './lib/view/templateCanales.js';
+import { profile } from './lib/view/templatePerfil.js';
+import { community } from './lib/view/templateComunidad.js';
+import { communitySearch } from './lib/view/templateComunidadBuscador.js';
 
 console.log("Hello!")
 
@@ -19,6 +22,9 @@ document.getElementById("root").appendChild(signUp());
 document.getElementById("root").appendChild(tutorial());
 document.getElementById("root").appendChild(editProfile());
 document.getElementById("root").appendChild(channels());
+document.getElementById("root").appendChild(profile());
+document.getElementById("root").appendChild(community());
+document.getElementById("root").appendChild(communitySearch());
 // const init = () => {
 //     router("login");
 //   window.addEventListener("hashchange", () => {
