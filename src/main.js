@@ -1,4 +1,3 @@
-//import { myFunction } from "./lib/index.js";
 import { welcome } from './lib/view/templateBienvenida.js';
 //import { editProfile } from './lib/view/templateEditarPerfil.js';
 import { logIn } from './lib/view/templateIngresoUsuaria.js';
@@ -17,11 +16,8 @@ import { myFunction } from './lib/index.js';
 import { changeRoute } from './lib/router.js';
 
 console.log("Hello!")
+myFunction();
 
-// const myFunction = () => {
-//     // aqui tu codigo
-//     console.log('Hola mundo!');
-// };
 // document.getElementById("root").innerHTML=(menu());
 // document.getElementById("root").appendChild(welcome());
 // document.getElementById("root").appendChild(language());
@@ -40,12 +36,8 @@ console.log("Hello!")
 const init = () => {
     document.getElementById('root').innerHTML = "";
     document.getElementById('root').innerHTML = menu();
-<<<<<<< HEAD
-    document.getElementById('root').appendChild(welcome());
-=======
     //document.getElementById("root").innerHTML = welcome();
     //document.getElementById('root').appendChild(welcome());
->>>>>>> 73afa197bc2eb2994dc357764a44275e521795ff
     //document.getElementById("root").appendChild(logIn());
     //document.getElementById("root").appendChild(signUp());
     //document.getElementById("root").appendChild(channels());
@@ -53,19 +45,11 @@ const init = () => {
     //document.getElementById("root").appendChild(community());
     //document.getElementById("root").appendChild(inbox());
    
-<<<<<<< HEAD
-     window.addEventListener('hashchange', () => {
-       myFunction();
-       console.log(window.location.hash);
-       changeRoute(window.location.hash);  
-     });
-=======
     window.addEventListener("hashchange", () => {
       myFunction();
       console.log(window.location.hash);
       changeRoute(window.location.hash);  
     });
->>>>>>> 73afa197bc2eb2994dc357764a44275e521795ff
   };
   window.addEventListener('load', init);
 
@@ -84,5 +68,3 @@ const init = () => {
 //     document.getElementById("root").innerHTML = welcome();
 // };
 // window.addEventListener("load", init);
-
-
