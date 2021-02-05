@@ -34,26 +34,24 @@ myFunction();
 // document.getElementById("root").appendChild(message());
 
 const init = () => {
+    document.getElementById('root').innerHTML = "";
     document.getElementById('root').innerHTML = menu();
-    document.getElementById('root').appendChild(welcome());
-    document.getElementById("root").appendChild(logIn());
+    //document.getElementById("root").innerHTML = welcome();
+    //document.getElementById('root').appendChild(welcome());
+    //document.getElementById("root").appendChild(logIn());
     //document.getElementById("root").appendChild(signUp());
     //document.getElementById("root").appendChild(channels());
     //document.getElementById("root").appendChild(profile());
-   // document.getElementById("root").appendChild(community());
+    //document.getElementById("root").appendChild(community());
     //document.getElementById("root").appendChild(inbox());
    
-     window.addEventListener("hashchange", () => {
-       myFunction();
-       console.log(window.location.hash);
-       changeRoute(window.location.hash);  
-     });
+    window.addEventListener("hashchange", () => {
+      myFunction();
+      console.log(window.location.hash);
+      changeRoute(window.location.hash);  
+    });
   };
   window.addEventListener("load", init);
-
-
-
-
 
 // const init = () => {
 //     router("login");
