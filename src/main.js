@@ -68,5 +68,3 @@ const init = () => {
 //     document.getElementById("root").innerHTML = welcome();
 // };
 // window.addEventListener("load", init);
-
-
