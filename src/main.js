@@ -1,4 +1,3 @@
-//import { myFunction } from "./lib/index.js";
 import { welcome } from './lib/view/templateBienvenida.js';
 //import { editProfile } from './lib/view/templateEditarPerfil.js';
 import { logIn } from './lib/view/templateIngresoUsuaria.js';
@@ -17,11 +16,8 @@ import { myFunction } from './lib/index.js';
 import { changeRoute } from './lib/router.js';
 
 console.log("Hello!")
+myFunction();
 
-// const myFunction = () => {
-//     // aqui tu codigo
-//     console.log('Hola mundo!');
-// };
 // document.getElementById("root").innerHTML=(menu());
 // document.getElementById("root").appendChild(welcome());
 // document.getElementById("root").appendChild(language());
@@ -47,13 +43,13 @@ const init = () => {
    // document.getElementById("root").appendChild(community());
     //document.getElementById("root").appendChild(inbox());
    
-     window.addEventListener('hashchange', () => {
+     window.addEventListener("hashchange", () => {
        myFunction();
        console.log(window.location.hash);
        changeRoute(window.location.hash);  
      });
   };
-  window.addEventListener('load', init);
+  window.addEventListener("load", init);
 
 
 
