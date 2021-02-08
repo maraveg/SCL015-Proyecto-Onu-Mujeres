@@ -8,7 +8,7 @@ import { channels } from '../lib/view/templateCanales.js';
 //import { profile } from '../lib/view/templatePerfil.js';
 //import { community } from '../lib/view/templateComunidad.js';
 //import { communitySearch } from '../lib/view/templateComunidadBuscador.js';
-//import { passwordReset } from '../lib/view/templateRecuperarContrasena.js';
+import { passwordReset } from '../lib/view/templateRecuperarContrasena.js';
 //import { inbox } from '../lib/view/templateMensajes.js';
 //import { message } from '../lib/view/templateEnviarMensaje.js';
 import { language } from '../lib/view/templateIdioma.js';
@@ -28,6 +28,9 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(channels());
       containerRoot.appendChild(navBar());
       break;
+    case '#/resetpassword':
+      containerRoot.appendChild(passwordReset());
+      break;
     default:
       containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>`;
   }
@@ -42,7 +45,9 @@ export const changeRoute = (hash) => {
     return showTemplate(hash);
   } else if (hash === '#/channels') {
     return showTemplate(hash);
+  } else if (hash === '#/resetpassword') {
+    return showTemplate(hash);
   } else {
     return showTemplate(hash);
-  }
+  } 
 };
