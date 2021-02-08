@@ -8,8 +8,12 @@ export const passwordReset = () => {
         <p>Escoge el medio:</p>
         <input type="tel" placeholder="SMS">
         <input type="email" placeholder="E-mail">
-        <button>Confirmar</button>
+        <button id="password-button">Confirmar</button>
     `;
     divPasswordReset.innerHTML = viewPasswordReset;
+    const loginForm = divPasswordReset.querySelector('#password-button');
+    loginForm.addEventListener('click', () => {
+      window.location.href = '#/login';
+    })
     return divPasswordReset;
 };

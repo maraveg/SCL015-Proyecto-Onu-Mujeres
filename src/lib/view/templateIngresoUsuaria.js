@@ -1,5 +1,3 @@
-// import { router } from "./lib/router.js";
-
 export const logIn = () => {
     const divLogIn = document.createElement("div");
     const viewLogIn = `
