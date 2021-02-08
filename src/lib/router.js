@@ -16,17 +16,12 @@ import { menu } from '../lib/view/templateMenu.js';
 
 export const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
-  
-switch (hash) {
+  containerRoot.innerHTML = '';
+  switch (hash) {
     case '#/':
-      containerRoot.innerHTML = menu();
-      break;
-    case '#/welcome':
-      containerRoot.innerHTML = "";
       containerRoot.appendChild(welcome());
       break;
-    case '#/logIn':
-      containerRoot.innerHTML = "";
+    case '#/login':
       containerRoot.appendChild(logIn());
       break;
     default:
@@ -39,7 +34,7 @@ export const changeRoute = (hash) => {
     return showTemplate(hash);
   } else if (hash === '#/welcome') {
     return showTemplate(hash);
-  } else if (hash === '#/logIn') {
+  } else if (hash === '#/login') {
     return showTemplate(hash);
   } else {
     return showTemplate(hash);

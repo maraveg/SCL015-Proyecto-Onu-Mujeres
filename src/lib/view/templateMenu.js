@@ -2,7 +2,7 @@ export const menu = () => {
   const divMenu = document.createElement("div");
     const viewMenu = `
       <ul>
-        <li><a href="#/welcome">Bienvenida</a></li>
+        <li><a href="#/">Bienvenida</a></li>
         <li><a href="#/logIn">Ingreso de Usuaria</a></li>
         <li><a href="#/signUp">Registro de Usuaria</a></li>
         <li><a href="#/channels">Canales</a></li>
