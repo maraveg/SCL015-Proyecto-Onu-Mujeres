@@ -1,14 +1,14 @@
 import { welcome } from './lib/view/templateBienvenida.js';
 //import { editProfile } from './lib/view/templateEditarPerfil.js';
 import { logIn } from './lib/view/templateIngresoUsuaria.js';
-import { signUp } from './lib/view/templateRegistroUsuaria.js';
+//import { signUp } from './lib/view/templateRegistroUsuaria.js';
 //import { tutorial } from './lib/view/templateTutorial.js';
-import { channels } from './lib/view/templateCanales.js';
-import { profile } from './lib/view/templatePerfil.js';
-import { community } from './lib/view/templateComunidad.js';
+//import { channels } from './lib/view/templateCanales.js';
+//import { profile } from './lib/view/templatePerfil.js';
+//import { community } from './lib/view/templateComunidad.js';
 //import { communitySearch } from './lib/view/templateComunidadBuscador.js';
 //import { passwordReset } from './lib/view/templateRecuperarContrasena.js';
-import { inbox } from './lib/view/templateMensajes.js';
+//import { inbox } from './lib/view/templateMensajes.js';
 //import { message } from './lib/view/templateEnviarMensaje.js';
 //import { language } from './lib/view/templateIdioma.js';
 import { menu } from './lib/view/templateMenu.js';
@@ -18,8 +18,8 @@ import { changeRoute } from './lib/router.js';
 console.log("Hello!")
 myFunction();
 
-// document.getElementById("root").innerHTML=(menu());
-// document.getElementById("root").appendChild(welcome());
+ //document.getElementById("root").innerHTML=(menu());
+ //document.getElementById("root").appendChild(welcome());
 // document.getElementById("root").appendChild(language());
 // document.getElementById("root").appendChild(logIn());
 // document.getElementById("root").appendChild(passwordReset());
@@ -35,8 +35,8 @@ myFunction();
 
 const init = () => {
     document.getElementById('root').innerHTML = menu();
-    document.getElementById('root').appendChild(welcome());
-    document.getElementById("root").appendChild(logIn());
+    //document.getElementById('root').appendChild(welcome());
+    //document.getElementById("root").appendChild(logIn());
     //document.getElementById("root").appendChild(signUp());
     //document.getElementById("root").appendChild(channels());
     //document.getElementById("root").appendChild(profile());
@@ -51,7 +51,8 @@ const init = () => {
   };
   window.addEventListener("load", init);
 
-
+document.getElementById("root").appendChild(welcome());
+document.getElementById("root").appendChild(logIn());
 
 
 

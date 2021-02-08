@@ -1,5 +1,4 @@
-//import { router } from "./lib/router.js";
-
+//import { router.js } from './lib/view/templateBienvenida';
 export const welcome = () => {
     const divWelcome = document.createElement("div");
     const viewWelcome = `
