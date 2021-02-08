@@ -1,3 +1,4 @@
+//import { welcome } from "../view/templateIngresoUsuaria.js";
 import { welcome } from '../lib/view/templateBienvenida.js';
 //import { editProfile } from '../lib/view/templateEditarPerfil.js';
 import { logIn } from '../lib/view/templateIngresoUsuaria.js';
@@ -13,31 +14,19 @@ import { logIn } from '../lib/view/templateIngresoUsuaria.js';
 //import { language } from '../lib/view/templateIdioma.js';
 import { menu } from '../lib/view/templateMenu.js';
 
-export const changeRoute = (hash) => {
-  if (hash === '#/') {
-    return showTemplate(hash);
-  } else if (hash === '#/welcome'){
-    return showTemplate(hash);
-  } else if (hash === '#/logIn') {
-    return showTemplate(hash);  
-  }
-  else {
-    return showTemplate(hash);
-  }
-};
-
-const showTemplate = (hash) => {
+export const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
-  containerRoot.innerHtml = menu();
-
-  switch (hash) {
+  
+switch (hash) {
     case '#/':
       containerRoot.innerHTML = menu();
       break;
     case '#/welcome':
+      containerRoot.innerHTML = "";
       containerRoot.appendChild(welcome());
       break;
     case '#/logIn':
+      containerRoot.innerHTML = "";
       containerRoot.appendChild(logIn());
       break;
     default:
@@ -45,3 +34,14 @@ const showTemplate = (hash) => {
   }
 };
 
+export const changeRoute = (hash) => {
+  if (hash === '#/') {
+    return showTemplate(hash);
+  } else if (hash === '#/welcome') {
+    return showTemplate(hash);
+  } else if (hash === '#/logIn') {
+    return showTemplate(hash);
+  } else {
+    return showTemplate(hash);
+  }
+};
