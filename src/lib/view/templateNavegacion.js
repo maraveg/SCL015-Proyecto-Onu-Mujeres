@@ -1,19 +1,17 @@
-export const menu = () => {
-  const divMenu = document.createElement("div");
-    const viewMenu = `
-      <ul>
-        <li><a href="#/">Bienvenida</a></li>
-        <li><a href="#/logIn">Ingreso de Usuaria</a></li>
-        <li><a href="#/signUp">Registro de Usuaria</a></li>
-        <li><a href="#/channels">Canales</a></li>
-        <li><a href="#/profile">Perfil</a></li>
-        <li><a href="#/community">Comunidad</a></li>
-        <li><a href="#/inbox">Mensajes</a></li>
-      </ul>
+export const navBar = () => {
+  const divNavBar = document.createElement("div");
+    const viewNavBar = `
+      <footer>
+        <ul>
+          <li><a href="#/channels">Canales</a></li>
+          <li><a href="#/community">Comunidad</a></li>
+          <li><a href="#/inbox">Mensajes</a></li>
+        </ul>
+      </footer>  
       `;
-    divMenu.innerHTML = viewMenu;
-    return viewMenu;
-  };
+    divNavBar.innerHTML = viewNavBar;
+    return divNavBar;
+};
 
 //   <ul>
 //   <li><a href="#/">Bienvenida</a></li>
@@ -30,4 +28,3 @@ export const menu = () => {
 //   <li><a href="#/"inbox>Mensajes</a></li>
 //   <li><a href="#/"message>Enviar Mensaje</a></li>
 // </ul>
-  

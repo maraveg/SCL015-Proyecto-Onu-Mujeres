@@ -4,15 +4,15 @@ import { welcome } from '../lib/view/templateBienvenida.js';
 import { logIn } from '../lib/view/templateIngresoUsuaria.js';
 //import { signUp } from '../lib/view/templateRegistroUsuaria.js';
 //import { tutorial } from '../lib/view/templateTutorial.js';
-//import { channels } from '../lib/view/templateCanales.js';
+import { channels } from '../lib/view/templateCanales.js';
 //import { profile } from '../lib/view/templatePerfil.js';
 //import { community } from '../lib/view/templateComunidad.js';
 //import { communitySearch } from '../lib/view/templateComunidadBuscador.js';
 //import { passwordReset } from '../lib/view/templateRecuperarContrasena.js';
 //import { inbox } from '../lib/view/templateMensajes.js';
 //import { message } from '../lib/view/templateEnviarMensaje.js';
-//import { language } from '../lib/view/templateIdioma.js';
-import { menu } from '../lib/view/templateMenu.js';
+import { language } from '../lib/view/templateIdioma.js';
+import { navBar } from '../lib/view/templateNavegacion.js';
 
 export const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
@@ -24,8 +24,12 @@ export const showTemplate = (hash) => {
     case '#/login':
       containerRoot.appendChild(logIn());
       break;
+    case '#/channels':
+      containerRoot.appendChild(channels());
+      containerRoot.appendChild(navBar());
+      break;
     default:
-      containerRoot.innerHTML = `<h2>No existe :c</h2>`;
+      containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>`;
   }
 };
 
@@ -35,6 +39,8 @@ export const changeRoute = (hash) => {
   } else if (hash === '#/welcome') {
     return showTemplate(hash);
   } else if (hash === '#/login') {
+    return showTemplate(hash);
+  } else if (hash === '#/channels') {
     return showTemplate(hash);
   } else {
     return showTemplate(hash);
