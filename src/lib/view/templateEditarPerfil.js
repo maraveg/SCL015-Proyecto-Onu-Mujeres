@@ -16,8 +16,12 @@ export const editProfile = () => {
         <option value="Ara">Araucanía</option>
         </select>
         <input type="text" placeholder="Ciudad">
-        <button>GUARDAR CAMBIOS</button>
+        <button id="edit-profile">GUARDAR CAMBIOS</button>
     `;
     divEditProfile.innerHTML = viewEditProfile;
+    const loginForm = divEditProfile.querySelector('#edit-profile');
+    loginForm.addEventListener('click', () => {
+      window.location.href = '#/channels';
+    })
     return divEditProfile;
 };
