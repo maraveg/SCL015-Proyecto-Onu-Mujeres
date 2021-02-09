@@ -1,3 +1,27 @@
+Body{
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.welcome{
+    margin-top: 15%;
+    color: #1f3361;
+    font-size: 18px;
+}
+.logo{
+    margin-top: 25%;
+    margin-left: 15%;
+    color: #1f3361;
+}
+#enter-button{
+    margin-left: 25%;
+    margin-top: 15%;
+    background-color: #de7c88;
+    color: white;
+    width: 143px;
+    height: 42px;
+    border-radius: 20px;
+}
 p {
     color: cornflowerblue;
 }

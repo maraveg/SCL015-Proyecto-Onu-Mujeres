@@ -2,8 +2,9 @@
 export const welcome = () => {
     const divWelcome = document.createElement("div");
     const viewWelcome = `
-        <h1>TU OPORTUNIDAD</h1>
-        <button id="enter-button">ENTRAR</button>
+        <h1 class="welcome" >Bienvenida</h1>
+        <h2 class="logo" > Tu Oportunidad </h2>
+        <button id="enter-button">Entrar</button>
     `;
     divWelcome.innerHTML = viewWelcome;
     const loginForm = divWelcome.querySelector('#enter-button');
