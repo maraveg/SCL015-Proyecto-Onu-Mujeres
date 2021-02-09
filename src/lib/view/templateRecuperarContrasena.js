@@ -3,6 +3,10 @@
 export const passwordReset = () => {
     const divPasswordReset = document.createElement("div");
     const viewPasswordReset = `
+        <div class:"logos"> 
+        <img  id="oportunidad-logo" src="./assets/logo.png"> 
+        <img  id="onu-logo"  src="./assets/onu.women.png">
+        </div>
         <p>Recupera tu contraseña</p>
         <p>Para recuperar tu contraseña te enviaremos un mensaje de seguridad.</p>
         <p>Escoge el medio:</p>

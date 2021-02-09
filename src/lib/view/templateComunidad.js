@@ -1,6 +1,8 @@
 export const community = () => {
     const divCommunity = document.createElement("div");
     const viewCommunity = `
+        <div class:"logos"> 
+        <img  id="oportunidad-logo" src="./assets/logo.png"></div>
         <p>COMUNIDAD</p>
         <p>¡Selecciona una zona y comunícate
         con más mujeres como tú!</p>

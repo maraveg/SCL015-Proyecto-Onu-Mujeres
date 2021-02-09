@@ -1,8 +1,10 @@
 export const logIn = () => {
     const divLogIn = document.createElement("div");
     const viewLogIn = `
-        <div id="oportunidad-logo">
-        <div id="onu-logo">
+        <div class:"logos"> 
+        <img  id="oportunidad-logo" src="./assets/logo.png"> 
+        <img  id="onu-logo"  src="./assets/onu.women.png">
+        </div>
         <p>Iniciar sesión</p>
         <input type="email" placeholder="E-mail">
         <input type="password" placeholder="Contraseña">

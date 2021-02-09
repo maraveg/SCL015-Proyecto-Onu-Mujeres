@@ -8,19 +8,40 @@ Body{
     color: #1f3361;
     font-size: 18px;
 }
-.logo{
-    margin-top: 25%;
+.logo-bienvenida{
+    margin-top: 15%;
     margin-left: 15%;
-    color: #1f3361;
+    width: 250px;
 }
 #enter-button{
-    margin-left: 25%;
-    margin-top: 15%;
+    margin-left: 28%;
+    margin-top: 35%;
     background-color: #de7c88;
     color: white;
     width: 143px;
     height: 42px;
     border-radius: 20px;
+    font-size: 18px;
+}
+.logos{
+    margin: 10px auto;
+    width: 100%;
+    /*background-color: #E7F6F6;
+    border: 1px solid #99cccc;
+    display: flex;
+    align-items: center;*/
+    justify-content: space-evenly;    
+}
+#oportunidad-logo{
+    margin-bottom: 50px;
+    width: 152px;
+    margin-left: 3%;
+   
+}
+#onu-logo{ 
+    width: 70px;
+    margin-bottom: 35px;
+    margin-left: 70px;
 }
 p {
     color: cornflowerblue;

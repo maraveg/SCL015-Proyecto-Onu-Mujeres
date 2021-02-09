@@ -3,6 +3,10 @@
 export const signUp = () => {
     const divSignUp = document.createElement("div");
     const viewSignUp = `
+        <div class:"logos"> 
+        <img  id="oportunidad-logo" src="./assets/logo.png"> 
+        <img  id="onu-logo"  src="./assets/onu.women.png">
+        </div>
         <p>Registro</p>
         <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Apellido">
