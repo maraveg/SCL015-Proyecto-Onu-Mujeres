@@ -1,8 +1,15 @@
 Body{
     background-color: #fafafa;
     font-family: 'Montserrat', sans-serif;
+  
 }
-
+/*Pagina Bienvenida*/
+#welcome{
+    background-image: url(./assets/lightBlue2.jpg);
+    background-repeat: round;
+    background-size: cover;
+    height: 100vh;
+}
 .welcome{
     margin-top: 15%;
     color: #1f3361;
@@ -23,25 +30,181 @@ Body{
     border-radius: 20px;
     font-size: 18px;
 }
+#enter.button:focus:not(:focus-visible){
+    outline: 0;
+}
+/*Logos para las siguientes páginas*/
 .logos{
     margin: 10px auto;
     width: 100%;
-    /*background-color: #E7F6F6;
-    border: 1px solid #99cccc;
-    display: flex;
+    /*display: flex;
     align-items: center;*/
     justify-content: space-evenly;    
 }
 #oportunidad-logo{
+    margin-top: 5%;
     margin-bottom: 50px;
-    width: 152px;
+    width: 172px;
     margin-left: 3%;
    
 }
 #onu-logo{ 
-    width: 70px;
+    width: 80px;
     margin-bottom: 35px;
     margin-left: 70px;
+}
+
+/*Página de inicio sesión*/
+#inicio-sesion{
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+::placeholder { 
+    color: #7b8794;
+    margin-left: 5%;
+    text-align: left;
+    border: 1px;
+  
+    /*opacity: 2;*/
+}
+#e-mail{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-top: 10%;
+    margin-left: 4%;
+    height: 32px;
+    width: 312px;
+    font-weight: lighter;
+    background: white;
+}
+#e-mail.button:focus:not(:focus-visible){
+    outline: 0;
+}
+#password{
+    border-radius: 48px;;
+    align-content: flex-start;
+    margin-top: 5%;
+    margin-left: 4%;
+    height: 32px;
+    width: 312px;
+    font-weight: lighter;
+    background: white;
+}
+#password.button:focus:not(:focus-visible){
+    outline: 0;
+}
+.reset-password{
+    text-align: right;
+    font-size: 12px;
+    color: #1f3361;
+    margin-left: 45%;
+}
+#reset-password{
+    margin-top: 3%;
+    text-align: right;
+    margin-right: 5%;
+}
+#login-button{
+    margin-left: 28%;
+    margin-top: 15%;
+    background-color: #de7c88;
+    color: white;
+    width: 143px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#not-account{
+    color:#1f3361;
+    text-align: center;
+    margin-top: 10%;
+    font-size: 12px;
+}
+
+/*Página de registro*/
+#Registry{
+    color:  #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+/* ::placeholder { 
+    color: #7b8794;
+    margin-left: 5%;
+    text-align: left;
+    border: 1px;
+} */
+
+.placeholder{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-top: 10%;
+    margin-left: 4%;
+    height: 32px;
+    width: 312px;
+    font-weight: lighter;
+    background: white;
+}
+.input-placeholder{
+    margin-left: 4%;
+    height: 50px;
+    border-radius: 48%;
+    margin-top: 5%;
+}
+.name-surname{
+    align-content: space-between;
+}
+#text-name{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 35px;
+    width: 140px;
+    font-weight: lighter;
+    background: white;
+}
+#text-surname{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 35px;
+    width: 140px;
+    font-weight: lighter;
+    background: white;
+}
+#text-mail{
+    border-radius: 48px;
+    align-content: flex-start;
+    
+    margin-left: 1%;
+    height: 35px;
+    width: 310px;
+    font-weight: lighter;
+    background: white;
+}
+#text-password{
+    border-radius: 48px;
+    align-content: flex-start;
+
+    margin-left: 1%;
+    height: 35px;
+    width: 310px;
+    font-weight: lighter;
+    background: white;
+}
+#text-repeat-password{
+    border-radius: 48px;
+    align-content: flex-start;
+  
+    margin-left: 1%;
+    height: 35px;
+    width: 310px;
+    font-weight: lighter;
+    background: white;
 }
 p {
     color: cornflowerblue;

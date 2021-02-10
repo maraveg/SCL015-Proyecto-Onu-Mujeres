@@ -5,12 +5,14 @@ export const logIn = () => {
         <img  id="oportunidad-logo" src="./assets/logo.png"> 
         <img  id="onu-logo"  src="./assets/onu.women.png">
         </div>
-        <p>Iniciar sesión</p>
-        <input type="email" placeholder="E-mail">
-        <input type="password" placeholder="Contraseña">
-        <a href="#/resetpassword">¿Has olvidado tu contraseña?</a>
-        <button id="login-button">ENTRAR</button>
-        <p><strong>¿No tienes cuenta? <a href="#/signup">Regístrate</strong></a></p>
+        <p id="inicio-sesion" font="Bold" >Iniciar sesión</p>
+        <div><input type="email" placeholder="E-mail" id="e-mail"></div>
+        <div><input type="password" placeholder="Contraseña" id="password"></div>
+        <div id="reset-password">
+        <a class="reset-password" href="#/resetpassword">¿Has olvidado tu contraseña?</a>
+        </div>
+        <button id="login-button">Entrar</button>
+        <p id="not-account"><strong>¿No tienes cuenta? <a href="#/signup">Regístrate</strong></a></p>
     `;
     divLogIn.innerHTML = viewLogIn;
     const loginForm = divLogIn.querySelector('#login-button');
