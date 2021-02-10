@@ -129,6 +129,7 @@ Body{
     font-size: 20px;
     font-weight: bold;
     margin-left: 5%;
+    margin-top: 0%;
 }
 /* ::placeholder { 
     color: #7b8794;
@@ -142,69 +143,103 @@ Body{
     align-content: flex-start;
     margin-top: 10%;
     margin-left: 4%;
-    height: 32px;
+    height: 30px;
     width: 312px;
     font-weight: lighter;
     background: white;
 }
 .input-placeholder{
-    margin-left: 4%;
-    height: 50px;
+
     border-radius: 48%;
     margin-top: 5%;
 }
-.name-surname{
+#name-surname{
     align-content: space-between;
 }
 #text-name{
     border-radius: 48px;
     align-content: flex-start;
-    margin-top: 5%;
+    margin-top: 0%;
     margin-left: 5%;
-    height: 35px;
-    width: 140px;
+    height: 28px;
+    width: 135px;
     font-weight: lighter;
     background: white;
 }
 #text-surname{
     border-radius: 48px;
     align-content: flex-start;
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 35px;
-    width: 140px;
+    margin-top: 0%;
+    margin-left: 6%;
+    height: 28px;
+    width: 135px;
     font-weight: lighter;
     background: white;
 }
-#text-mail{
+select, option{
+    color:  #1f3361;
+}
+#region{
     border-radius: 48px;
     align-content: flex-start;
-    
-    margin-left: 1%;
+    margin-top: 5%;
+    margin-left: 5%;
     height: 35px;
     width: 310px;
     font-weight: lighter;
     background: white;
+}
+#city{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 35px;
+    width: 310px;
+    font-weight: lighter;
+    background: white;
+}
+
+#text-mail{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-left: 5%;
+    height: 28px;
+    width: 300px;
+    font-weight: lighter;
+    background: white;
+    text-align: center;
 }
 #text-password{
     border-radius: 48px;
     align-content: flex-start;
-
-    margin-left: 1%;
-    height: 35px;
-    width: 310px;
+    margin-left: 5%;
+    height: 28px;
+    width: 300px;
     font-weight: lighter;
     background: white;
 }
 #text-repeat-password{
     border-radius: 48px;
     align-content: flex-start;
-  
-    margin-left: 1%;
-    height: 35px;
-    width: 310px;
+    margin-left: 5%;
+    height: 28px;
+    width: 300px;
     font-weight: lighter;
     background: white;
+}
+#text-city{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-left: 1%;
+    height: 28px;
+    width: 300px;
+    font-weight: lighter;
+    background: white;
+}
+#conditions{
+    color: black;
+    font-size: 12px;
 }
 p {
     color: cornflowerblue;
