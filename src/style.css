@@ -11,7 +11,7 @@ Body{
     height: 100vh;
 }
 .welcome{
-    margin-top: 15%;
+    margin-top: 5%;
     color: #1f3361;
     font-size: 18px;
 }
@@ -51,7 +51,7 @@ Body{
 #onu-logo{ 
     width: 80px;
     margin-bottom: 35px;
-    margin-left: 70px;
+    margin-left: 65px;
 }
 
 /*Página de inicio sesión*/
@@ -95,16 +95,17 @@ Body{
 #password.button:focus:not(:focus-visible){
     outline: 0;
 }
-.reset-password{
-    text-align: right;
+.text-reset-password{
     font-size: 12px;
     color: #1f3361;
-    margin-left: 45%;
-}
-#reset-password{
+    margin-left: 40%;
+    font-weight: lighter;
+} 
+#text-reset-password{
+    color: #1f3361;
+    font-weight: bold;
+    margin-right: 2%;
     margin-top: 3%;
-    text-align: right;
-    margin-right: 5%;
 }
 #login-button{
     margin-left: 28%;
@@ -236,11 +237,92 @@ select, option{
     width: 300px;
     font-weight: lighter;
     background: white;
+    border: 0;
 }
 #conditions{
     color: black;
     font-size: 12px;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
 }
+#signup-button{
+    margin-left: 28%;
+    margin-top: 5%;
+    background-color: #de7c88;
+    color: white;
+    width: 143px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+#signup-buttonn:focus:not(:focus-visible){
+    outline: 0;
+}
+
+/*Página Recupera tu contraseña*/
+
+#reset-password{
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 22%;
+ 
+}
+
+#text-reset{
+    color: #4f4f4f;
+    font-size: 18px;
+    margin-left: 5%;
+    text-align: left;
+    font-weight:normal;
+    margin-left: 4%;
+}
+#choose{
+    color: #4f4f4f;
+    font-size: 18px;
+    margin-left: 5%;
+    text-align: left;
+}
+#sms-reset{
+    border-radius: 48px;
+    margin-left: 5%;
+    height: 28px;
+    width: 300px;
+    font-weight: lighter;
+    background: white;
+    /* background-image: url(./assets/icono-sms.png);
+    background-repeat: no-repeat; */
+    text-align: center;
+}
+#mail-reset{
+    border-radius: 48px;
+    align-content: flex-start;
+    margin-left: 5%;
+    margin-top: 3%;
+    height: 28px;
+    width: 300px;
+    font-weight: lighter;
+    background: white;
+}
+.placeholder-reset{
+    border-radius: 48px;
+    border: blue;
+}
+
+#password-button{
+    margin-left: 28%;
+    margin-top: 10%;
+    background-color: #de7c88;
+    color: white;
+    width: 143px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 18px;
+  
+}
+
 p {
     color: cornflowerblue;
 }
@@ -260,3 +342,6 @@ button {
     border-radius: 5px;
     border: none;
 }
+
+
+
