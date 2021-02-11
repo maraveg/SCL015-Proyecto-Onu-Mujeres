@@ -7,9 +7,29 @@
     <link rel="stylesheet" href="style.css" />
     <title>Tu Oportunidad - ONU Mujeres</title>
   </head>
-
   <body>
+  
     <div id="root"></div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script src="https://www.gstatic.com/firebasejs/8.2.6/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAgMJFI6UwuZXYm26aFuuDUZD3GLlWspGA",
+    authDomain: "tu-oportunidad---onu-mujeres.firebaseapp.com",
+    projectId: "tu-oportunidad---onu-mujeres",
+    storageBucket: "tu-oportunidad---onu-mujeres.appspot.com",
+    messagingSenderId: "617782813454",
+    appId: "1:617782813454:web:4284431d03e153161dad5f"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
     <script src="main.js" type="module"></script>
   </body>
 </html>
