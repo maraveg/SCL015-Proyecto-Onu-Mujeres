@@ -2,12 +2,18 @@ export const channels = () => {
     const divChannels = document.createElement("div");
     const viewChannels = `
         <input type="image" id="Logo-TuOportunidad">
-        <a href="#/menu"><input type="image" id="Logo-TuOportunidad"></a>
-        <img src="" alt="">
+        <button type="button" id="user-image">USER IMAGE</button>
         <p>Canales</p>
         <input type="search">
         <div id="Box-channels"></div>
-        <img src="" alt="" id="image-Usuaria">
+        <div id="mini-menu">
+            <ul>
+            <li><a href="#/editprofile">Configurar perfil</a></li>
+            <li><a href="#/language">Configurar idioma</a></li>
+            <li><a href="#/inbox">Ayuda</a></li>
+            <li><a href="#/inbox">Cerrar Sesión</a></li>
+            </ul>
+        </div>
     `;
     divChannels.innerHTML = viewChannels;
     return divChannels;

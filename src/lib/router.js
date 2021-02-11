@@ -37,43 +37,43 @@ export const showTemplate = (hash) => {
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
       break;
-      case '#/menu':
-      containerRoot.appendChild(menu());
-      break;
-      case '#/language':
+    // case '#/menu':
+    //   containerRoot.appendChild(menu());
+    //   break;
+    case '#/language':
       containerRoot.appendChild(language());
       break;
-      case '#/editprofile':
+    case '#/editprofile':
       containerRoot.appendChild(editProfile());
       containerRoot.appendChild(navBar());
       break;
-      case '#/community':
+    case '#/community':
       containerRoot.appendChild(community());
       containerRoot.appendChild(navBar());
       break;
-      case '#/north':
+    case '#/north':
       containerRoot.appendChild(north());
       containerRoot.appendChild(navBar());
       break;
-      case '#/center':
+    case '#/center':
       containerRoot.appendChild(center());
       containerRoot.appendChild(navBar());
       break;
-      case '#/south':
+    case '#/south':
       containerRoot.appendChild(south());
       containerRoot.appendChild(navBar());
       break;
-      case '#/profile':
+    case '#/profile':
       containerRoot.appendChild(profile());
       containerRoot.appendChild(navBar());
       break;
-      case '#/send':
-        containerRoot.appendChild(message());
-        break;
-        case '#/inbox':
-        containerRoot.appendChild(inbox());
-        containerRoot.appendChild(navBar());
-        break;
+    case '#/send':
+      containerRoot.appendChild(message());
+      break;
+    case '#/inbox':
+      containerRoot.appendChild(inbox());
+      containerRoot.appendChild(navBar());
+      break;
     default:
       containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>`;
   }
@@ -92,8 +92,8 @@ export const changeRoute = (hash) => {
     return showTemplate(hash);
   } else if (hash === '#/resetpassword') {
     return showTemplate(hash);
-  } else if (hash === '#/menu') {
-    return showTemplate(hash);
+  // } else if (hash === '#/menu') {
+  //   return showTemplate(hash);
   } else if (hash === '#/language') {
     return showTemplate(hash);
   } else if (hash === '#/editprofile') {
