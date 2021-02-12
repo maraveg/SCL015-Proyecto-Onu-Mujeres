@@ -3,8 +3,11 @@ export const community = () => {
     const viewCommunity = `
         <div class:"logos"> 
         <img  id="oportunidad-logo" src="./assets/logo.png"></div>
-        <p>COMUNIDAD</p>
-        <p>¡Selecciona una zona y comunícate
+        <div class="community-arrow">
+        <img src="./assets/left-arrow.png" id="icon-arrow">
+        <p id="text-community">Comunidad</p>
+        </div>
+        <p id="text-zone">¡Selecciona una zona y comunícate
         con más mujeres como tú!</p>
         <p><a href="#/north">Zona Norte</a></p>
         <div>

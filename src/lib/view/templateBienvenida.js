@@ -3,9 +3,8 @@ export const welcome = () => {
     const divWelcome = document.createElement("div");
     const viewWelcome = `
         
-       <p class="welcome" >Bienvenida</p>
         <div id="welcome">
-        
+        <p class="welcome" >Bienvenida</p>
         <img src="./assets/logo.png" class="logo-bienvenida">
         <button id="enter-button">Entrar</button> </div>
     `;

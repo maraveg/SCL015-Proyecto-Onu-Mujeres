@@ -22,7 +22,7 @@ Body{
 }
 #enter-button{
     margin-left: 28%;
-    margin-top: 35%;
+    margin-top: 45%;
     background-color: #de7c88;
     color: white;
     width: 143px;
@@ -65,7 +65,7 @@ Body{
     color: #7b8794;
     margin-left: 5%;
     text-align: left;
-    border: 1px;
+    border: 0;
   
     /*opacity: 2;*/
 }
@@ -167,6 +167,9 @@ Body{
     font-weight: lighter;
     background: white;
 }
+#text-name.button:focus:not(:focus-visible){
+    outline: 0;
+}
 #text-surname{
     border-radius: 48px;
     align-content: flex-start;
@@ -176,6 +179,9 @@ Body{
     width: 135px;
     font-weight: lighter;
     background: white;
+}
+#text-surname.button:focus:not(:focus-visible){
+    outline: 0;
 }
 select, option{
     color:  #1f3361;
@@ -190,6 +196,9 @@ select, option{
     font-weight: lighter;
     background: white;
 }
+#region.button:focus:not(:focus-visible){
+    outline: 0;
+}
 #city{
     border-radius: 48px;
     align-content: flex-start;
@@ -200,7 +209,9 @@ select, option{
     font-weight: lighter;
     background: white;
 }
-
+#city:focus:not(:focus-visible){
+    outline: 0;
+}
 #text-mail{
     border-radius: 48px;
     align-content: flex-start;
@@ -211,6 +222,9 @@ select, option{
     background: white;
     text-align: center;
 }
+#text-mail:focus:not(:focus-visible){
+    outline: 0;
+}
 #text-password{
     border-radius: 48px;
     align-content: flex-start;
@@ -219,6 +233,9 @@ select, option{
     width: 300px;
     font-weight: lighter;
     background: white;
+}
+#text-password:focus:not(:focus-visible){
+    outline: 0;
 }
 #text-repeat-password{
     border-radius: 48px;
@@ -323,6 +340,28 @@ select, option{
   
 }
 
+/*Página Comunidad*/
+.community-arrow{
+    margin: 3%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+#text-community{
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 3%;
+    margin-top: 7%;
+}
+#text-zone{
+    color: #4f4f4f;
+    font-size: 18px;
+    margin-left: 5%;
+    text-align: left;
+}
+
+
 p {
     color: cornflowerblue;
 }
@@ -342,6 +381,4 @@ button {
     border-radius: 5px;
     border: none;
 }
-
-
 
