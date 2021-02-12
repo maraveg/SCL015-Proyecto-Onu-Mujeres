@@ -5,7 +5,7 @@ Body{
 }
 /*Pagina Bienvenida*/
 #welcome{
-    background-image: url(./assets/lightBlue2.jpg);
+    background-image: url(./assets/lightBlue.jpg);
     background-repeat: round;
     background-size: cover;
     height: 100vh;
@@ -371,7 +371,7 @@ select, option{
     color: #1f3361;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 50%;
+    margin-left: 3%;
     margin-top: 7%;
 }
 
