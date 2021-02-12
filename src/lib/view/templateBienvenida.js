@@ -1,9 +1,10 @@
-//import { router.js } from './lib/view/templateBienvenida';
 export const welcome = () => {
     const divWelcome = document.createElement("div");
     const viewWelcome = `
-        <h1>TU OPORTUNIDAD</h1>
-        <button id="enter-button">ENTRAR</button>
+        <div id="welcome">
+        <p class="welcome" >Bienvenida</p>
+        <img src="./assets/logo.png" class="logo-bienvenida">
+        <button id="enter-button">Entrar</button> </div>
     `;
     divWelcome.innerHTML = viewWelcome;
     const loginForm = divWelcome.querySelector('#enter-button');
