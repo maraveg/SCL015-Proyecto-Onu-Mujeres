@@ -8,7 +8,3 @@ const init = () => {
   });
 };
 window.addEventListener('load', init);
-
-document.getElementById("user-image").addEventListener("click", function(){
-  document.getElementById("mini-menu").style.display = "none";
-});

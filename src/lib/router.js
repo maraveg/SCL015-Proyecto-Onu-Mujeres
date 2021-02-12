@@ -3,7 +3,7 @@ import { editProfile } from '../lib/view/templateEditarPerfil.js';
 import { logIn } from '../lib/view/templateIngresoUsuaria.js';
 import { signUp } from '../lib/view/templateRegistroUsuaria.js';
 //import { tutorial } from '../lib/view/templateTutorial.js';
-import { channels } from '../lib/view/templateCanales.js';
+import { channels, channelCard } from '../lib/view/templateCanales.js';
 import { profile } from '../lib/view/templatePerfil.js';
 import { community } from '../lib/view/templateComunidad.js';
 //import { communitySearch } from '../lib/view/templateComunidadBuscador.js';
@@ -33,6 +33,7 @@ export const showTemplate = (hash) => {
     case '#/channels':
       containerRoot.appendChild(channels());
       containerRoot.appendChild(navBar());
+      containerRoot.appendChild(channelCard());
       break;
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
