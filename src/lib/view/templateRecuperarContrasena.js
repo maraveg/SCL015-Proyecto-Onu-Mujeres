@@ -13,8 +13,6 @@ export const passwordReset = () => {
         <div class="placeholder-reset"><input type="tel" id="sms-reset" placeholder="SMS"></div>
         <div class="placeholder-reset"><input type="email" id="mail-reset" placeholder="E-mail"></div>
         <div><button id="password-button">Confirmar</button></div>
-
-  
     `;
     divPasswordReset.innerHTML = viewPasswordReset;
     const loginForm = divPasswordReset.querySelector('#password-button');

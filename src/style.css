@@ -3,26 +3,37 @@ Body{
     font-family: 'Montserrat', sans-serif;
   
 }
-/*Pagina Bienvenida*/
-#welcome{
-    background-image: url(./assets/lightBlue.jpg);
-    background-repeat: round;
-    background-size: cover;
-    height: 100vh;
+#front-end{
+    width: 100vh;
 }
+/*Pagina Bienvenida*/
 .welcome{
-    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+}
+.fondo-welcome{
+    width: 100%;
+    position: fixed;
+    /* filter: brightness(130%); */
+} 
+#text-welcome{
+    position: absolute;
+    top: 5%;
+    left: 33%;
     color: #1f3361;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: bold;
 }
 .logo-bienvenida{
-    margin-top: 15%;
+    position: absolute;
+    margin-top: 45%;
     margin-left: 15%;
     width: 250px;
 }
 #enter-button{
-    margin-left: 28%;
-    margin-top: 45%;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 110%;
     background-color: #de7c88;
     color: white;
     width: 143px;
@@ -43,15 +54,15 @@ Body{
 }
 #oportunidad-logo{
     margin-top: 5%;
-    margin-bottom: 50px;
-    width: 172px;
+    margin-bottom: 10%;
+    width: 50%;
     margin-left: 3%;
    
 }
 #onu-logo{ 
-    width: 80px;
-    margin-bottom: 35px;
-    margin-left: 65px;
+    width: 25%;
+    margin-bottom: 7%;
+    margin-left: 18%;
 }
 
 /*Página de inicio sesión*/
@@ -75,7 +86,7 @@ Body{
     margin-top: 10%;
     margin-left: 4%;
     height: 32px;
-    width: 312px;
+    width: 90%;
     font-weight: lighter;
     background: white;
 }
@@ -88,7 +99,7 @@ Body{
     margin-top: 5%;
     margin-left: 4%;
     height: 32px;
-    width: 312px;
+    width: 90%;
     font-weight: lighter;
     background: white;
 }
@@ -364,14 +375,14 @@ select, option{
     color: #1f3361;
     font-size: 20px;
     font-weight: bold;
-    margin-left: 3%;
+    margin-left: 5%;
     margin-top: 7%;
 }
 .see-all{
-    color: #1f3361;
+    color: #4f4f4f;
     font-size: 14px;
     font-weight: bold;
-    margin-left: 3%;
+    margin-left: 70%;
     margin-top: 7%;
 }
 
