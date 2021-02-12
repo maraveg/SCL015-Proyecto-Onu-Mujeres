@@ -38,9 +38,9 @@ export const showTemplate = (hash) => {
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
       break;
-    // case '#/menu':
-    //   containerRoot.appendChild(menu());
-    //   break;
+    case '#/menu':
+      containerRoot.appendChild(menu());
+      break;
     case '#/language':
       containerRoot.appendChild(language());
       break;
@@ -93,8 +93,8 @@ export const changeRoute = (hash) => {
     return showTemplate(hash);
   } else if (hash === '#/resetpassword') {
     return showTemplate(hash);
-  // } else if (hash === '#/menu') {
-  //   return showTemplate(hash);
+  } else if (hash === '#/menu') {
+    return showTemplate(hash);
   } else if (hash === '#/language') {
     return showTemplate(hash);
   } else if (hash === '#/editprofile') {
