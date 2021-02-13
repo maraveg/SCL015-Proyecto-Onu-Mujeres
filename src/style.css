@@ -14,14 +14,35 @@ Body{
 .fondo-welcome{
     width: 100%;
     position: fixed;
+    opacity: 0.6;
     /* filter: brightness(130%); */
 } 
 #text-welcome{
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 33%;
     color: #1f3361;
     font-size: 20px;
+    font-weight: bold;
+}
+.english{
+    position: absolute;
+    top: 75%;
+    left: 15%;    
+}
+#english{
+    color: #1f3361;
+    font-size: 16px;
+    font-weight: bold;
+}
+.spanish{
+    position: absolute;
+    top: 75%;
+    right: 15%;
+}
+#spanish{
+    color: #1f3361;
+    font-size: 16px;
     font-weight: bold;
 }
 .logo-bienvenida{
