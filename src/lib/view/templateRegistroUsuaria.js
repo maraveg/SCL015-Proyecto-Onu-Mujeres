@@ -20,7 +20,7 @@ export const signUp = () => {
         <option value="0" selected disabled id="color-city">Ciudad</option>
         <option value="Ant">Antofagasta</option></div>
         <option value="Met">Santiago</option></div>
-        <option value="Ara">Temuco/option></div>
+        <option value="Ara">Temuco</option></div>
         </select></div>
         <div class="input-placeholder"><input type="email" placeholder="E-mail" id="text-mail"></div>
         <div class="input-placeholder"><input type="password" placeholder="Contraseña" id="text-password"></div>
