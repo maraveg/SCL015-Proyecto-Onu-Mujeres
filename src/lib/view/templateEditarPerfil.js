@@ -1,6 +1,8 @@
 export const editProfile = () => {
     const divEditProfile = document.createElement("div");
     const viewEditProfile = `
+        <div class:"logos"> 
+        <img  id="oportunidad-logo" src="./assets/logo.png"></div>
         <p>Editar Perfil</p>
         <img src="" alt="">
         <input type="text" placeholder="Nombre">

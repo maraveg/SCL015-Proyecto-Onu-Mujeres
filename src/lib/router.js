@@ -83,7 +83,7 @@ export const showTemplate = (hash) => {
         containerRoot.appendChild(navBar());
         break;
     default:
-      containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>`;
+      containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>  <img src="./assets/front-end.png" id="front-end">`;
   }
 };
 
