@@ -28,7 +28,7 @@ Body{
 .english{
     position: absolute;
     top: 75%;
-    left: 15%;    
+    left: 10%;    
 }
 #english{
     color: #1f3361;
@@ -38,9 +38,19 @@ Body{
 .spanish{
     position: absolute;
     top: 75%;
-    right: 15%;
+    right: 10%;
 }
 #spanish{
+    color: #1f3361;
+    font-size: 16px;
+    font-weight: bold;
+}
+.french{
+    position: absolute;
+    top: 75%;
+    right: 40%;
+}
+#french{
     color: #1f3361;
     font-size: 16px;
     font-weight: bold;
