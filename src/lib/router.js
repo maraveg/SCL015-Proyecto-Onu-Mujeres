@@ -3,7 +3,7 @@ import { editProfile } from '../lib/view/templateEditarPerfil.js';
 import { logIn } from '../lib/view/templateIngresoUsuaria.js';
 import { signUp } from '../lib/view/templateRegistroUsuaria.js';
 //import { tutorial } from '../lib/view/templateTutorial.js';
-import { channels, channelCard } from '../lib/view/templateCanales.js';
+import { createChannels, createChannelCard } from '../lib/view/templateCrearCanales.js';
 import { profile } from '../lib/view/templatePerfil.js';
 import { community } from '../lib/view/templateComunidad.js';
 //import { communitySearch } from '../lib/view/templateComunidadBuscador.js';
@@ -16,11 +16,15 @@ import { message } from '../lib/view/templateEnviarMensaje.js';
 import { language } from '../lib/view/templateIdioma.js';
 import { navBar } from '../lib/view/templateNavegacion.js';
 import { menu } from '../lib/view/templateMiniMenu.js';
+import { channels } from '../lib/view/templateCanales.js';
 
 export const showTemplate = (hash) => {
   const containerRoot = document.getElementById('root');
   containerRoot.innerHTML = '';
   switch (hash) {
+    case '':
+      containerRoot.appendChild(welcome());
+    break;
     case '#/':
       containerRoot.appendChild(welcome());
       break;
@@ -33,7 +37,10 @@ export const showTemplate = (hash) => {
     case '#/channels':
       containerRoot.appendChild(channels());
       containerRoot.appendChild(navBar());
-      containerRoot.appendChild(channelCard());
+      break;
+      case '#/createchannel':
+      containerRoot.appendChild(createChannels());
+      containerRoot.appendChild(createChannelCard());
       break;
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
@@ -76,7 +83,7 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(navBar());
       break;
     default:
-      containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>`;
+      containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>  <img src="./assets/front-end.png" id="front-end">`;
   }
 };
 
@@ -112,6 +119,8 @@ export const changeRoute = (hash) => {
   } else if (hash === '#/send') {
     return showTemplate(hash);
   } else if (hash === '#/inbox') {
+    return showTemplate(hash);
+  } else if (hash === '#/createchannel') {
     return showTemplate(hash);
   } else {
     return showTemplate(hash);
