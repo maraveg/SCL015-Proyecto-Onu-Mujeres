@@ -3,12 +3,11 @@ export const channels = () => {
   const viewChannels = `
       <div class:"logos"> 
       <img  id="oportunidad-logo" src="./assets/logo.png"></div>
-      <input type="image" id="Logo-TuOportunidad">
       <a href="#/menu"><input type="image" id="Logo-TuOportunidad"></a>
       <img src="" alt="">
-      <p>Canales</p>
-      <a href="#/createchannel">+ Crear Canal</a>
-      <input type="search">
+      <p id="text-channel">Canales</p>
+      <a href="#/createchannel">+ Crear Canal</a><br>
+      <input type="search" class="search-channel">
       <div id="Box-channels"></div>
       <img src="" alt="" id="image-Usuaria">
       <div class="col-md-6" id="channel-container"></div>
