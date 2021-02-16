@@ -8,7 +8,7 @@ export const createChannelCard = () => {
         <div class="card">
           <div class="card-body">
 
-            <p class="h4">Crea un nuevo canal</p>
+            <p id="create-title" class="h4">Ingresa</p>
 
             <form id="channels-form">
               <div class="form-group">
@@ -61,7 +61,7 @@ export const createChannelCard = () => {
     // console.log("hola", item)
     // });
 
-   // displayChannels(divChannelCard, db);
+    // displayChannels(divChannelCard, db);
 
   }) // se cierra el evento click
   //displayChannels(divChannelCard, db);
@@ -74,9 +74,15 @@ export const createChannelCard = () => {
 export const createChannels = () => {
   const divCreteChannels = document.createElement("div");
   const viewCreteChannels = `
-      <a href="#/menu"><input type="image" id="Logo-TuOportunidad"></a>
+      <div class:"logos"> 
+      <img  id="oportunidad-logo" src="./assets/logo.png">
+      <a href="#/menu"><img type="image" id="user-img" src="./assets/profile-img1.png"></a>
+      </div>
+      <div id="crea-channel-arrow">
+      <img src="./assets/left-arrow.png" id="channel-arrow">
+      <p id="text-create">Crea un nuevo canal</p>
+      </div>
       <img src="" alt="">
-      <p>Crea un nuevo canal</p>
       <div id="Box-channels"></div>
       <img src="" alt="" id="image-Usuaria">
   `;
