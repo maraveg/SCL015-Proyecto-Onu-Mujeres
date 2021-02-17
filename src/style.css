@@ -590,6 +590,10 @@ p{
     width: 60%;
 }
 
+.mini{
+    left: -130px;
+}
+
   /* Página de editar perfil*/
 
 .arrow-img-profile{

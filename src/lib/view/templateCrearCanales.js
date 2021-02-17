@@ -73,10 +73,6 @@ export const createChannelCard = () => {
 export const createChannels = () => {
   const divCreteChannels = document.createElement("div");
   const viewCreteChannels = `
-      <div class:"logos"> 
-      <img  id="oportunidad-logo" src="./assets/logo.png">
-      <a href="#/menu"><img type="image" id="user-img" src="./assets/profile-img1.png"></a>
-      </div>
       <div id="crea-channel-arrow">
       <img src="./assets/left-arrow.png" id="channel-arrow">
       <p id="text-create">Crea un nuevo canal</p>
