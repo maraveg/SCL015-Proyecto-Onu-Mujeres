@@ -4,7 +4,8 @@ Body{
   
 }
 #front-end{
-    width: 100vh;
+    width: 80%;
+    margin-left: 10%;
 }
 /*Pagina Bienvenida*/
 .welcome{
@@ -84,10 +85,9 @@ Body{
     justify-content: space-evenly;    
 }
 #oportunidad-logo{
-    margin-top: 5%;
-    margin-bottom: 10%;
     width: 50%;
     margin-left: 3%;
+    margin-top: 3%;
    
 }
 #onu-logo{ 
@@ -411,37 +411,23 @@ select, option{
 .see-all{
     color: #4f4f4f;
     font-size: 14px;
-    font-weight: bold;
+    /*font-weight: bold;*/
     margin-left: 70%;
-    margin-top: 7%;
 }
-
-/*Página Navegación*/
-
-#channels{
-    
+.user{
+    width: 40px;
+    margin-left: 5%;
 }
-
-
-
-/* p {
-    color: cornflowerblue;
+p{
+    margin-bottom: 3%;
 }
+/*Página Canales*/
 
-h1 {
-    color:blue;
-}
-
-h2 {
-    color:darkgreen;
-} */
-
-button {
-    background-color: darksalmon;
-    color:dimgray;
-    box-shadow: 2px 2px 5px #999;
-    border-radius: 5px;
-    border: none;
+/*Página creación de canales*/
+#plus-pink{
+    width: 30px;
+    margin-left: 85%;
+    margin-bottom: 3%;
 }
 .search-channel{
     border-radius: 48px;
@@ -457,7 +443,7 @@ button {
     font-size: 20px;
     font-weight: bold;
     margin-left: 3%;
-    margin-top: 7%;
+    margin-bottom: 0;
 }
 #btn-send-form{
     background-color: #de7c88;
@@ -481,6 +467,24 @@ button {
     display: flex;
     align-items: center;
 }
+
+
+#create-title{
+    font-size: 20px;
+    margin-left: 5px;
+    color: #1f3361;
+}
+#channel-arrow{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 3%;
+}
+#user-img{
+    margin-left: 25%;
+    height: 60px;
+}
+
+
 /*inputs canales*/
 .card {
     background-clip: border-box;
@@ -505,18 +509,39 @@ button {
     width: 98%;
     font-weight: lighter;
     background: white;
+}
+/*página que muestra los canales*/
+
+#channel-print{
+    background-color:#dde2e5;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,.125);
+}
+.new-channel-tittle{
+   color: #1f3361;
+   font-size: 18px;
+   font-weight: bold;
+   margin-left: 3%;
+}
+.new-channel-description{
+    color: #4f4f4f;
+    margin-left: 3%;
 
 }
-#create-title{
-    font-size: 20px;
-    margin-left: 5px;
-    color: #1f3361;
-}
-#channel-arrow{
-    margin-top: 0%;
-    margin-bottom: 0%;
+.undraw_img{
+    width: 100px;
+    height: 100px;
+    margin-top: 3%;
     margin-left: 3%;
+    border-radius: 10%;
 }
+.new-channel-cont{
+    align-content: center;
+    background-color: #dde2e5;
+    border-radius: 10px;
+    box-shadow: rgba(0,0,0,.125);
+}
+
 #user-img{
     margin-left: 25%;
     height: 60px;
@@ -526,9 +551,9 @@ button {
 
 .navbar-nav .dropdown-menu {
     position: absolute;
-  }
-  
-  .profileimg {
+}
+
+.profileimg {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -539,30 +564,80 @@ button {
     margin-left: 125px;
     margin-top: 20px;
     */
-    
+
     /*for demo*/
     display:inline-block;
     vertical-align:middle;
-  }
-  .profileimg img{
+}
+.profileimg img{
     width:100%;
     height: 100%;
-  }
-  .navigation-bar .dropdown-toggle::after {
+}
+.navigation-bar .dropdown-toggle::after {
     display: none;
-  }
-  .navigation-bar .navbar-brand img {
+}
+.navigation-bar .navbar-brand img {
     margin-top: 5%;
     margin-bottom: 10%;
     width: 90%;
     margin-left: 3%;
 
-  }
-  .bg-lightgray {
+}
+.bg-lightgray {
     background-color: #fafafa;
-  }
-  .navbar-brand {
+}
+.navbar-brand {
     width: 60%;
+}
+
+  /* Página de editar perfil*/
+
+.arrow-img-profile{
+    margin: 3%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+#arrow-profile{
+    width: 16px;
+    margin-top: 3%;
+}
+#edit-profile{
+    font-size: 18px;
+    color: #1f3361;
+    font-weight: bold;
+    margin-top: 5%;
+
+}
+#img-profile{
+    width: 100px;
+    margin-left: 38%;
+}
+.ph-edit-profile{
+    margin-left: 5%;
+    border-radius: 48px;
+    width: 88%;
+    height: 35px;
+    margin-top: 5%;
+}
+.select-edit-profile{
+    margin-left: 5%;
+    border-radius: 48px;
+    width: 88%;
+    height: 34px;
+    margin-top: 5%;
+}
+#save-changes{
+    background-color: #de7c88;
+    color: white;
+    border-radius: 48px;
+    margin-top: 10%;
+    margin-left: 22%;
+    height: 42px;
+    width: 200px;
+    box-shadow: rgba(0,0,0,.125);
+}
+
   }
 
   .mini{
