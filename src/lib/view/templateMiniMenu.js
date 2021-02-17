@@ -5,7 +5,7 @@ export const menu = () => {
       <nav class="navbar navbar-expand-lg navbar-dark bg-lightgray">
       <div class="container-fluid navigation-bar">
         <a class="navbar-brand" href="#/channels">
-          <img src="./assets/logo.png" />
+          <img src="./assets/logo.png">
         </a>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">

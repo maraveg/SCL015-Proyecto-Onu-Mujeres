@@ -394,12 +394,16 @@ select, option{
     font-weight: bold;
     margin-left: 3%;
     margin-top: 7%;
+    position: relative;
+    display: inline-block;
+
 }
 #text-zone{
     color: #4f4f4f;
     font-size: 18px;
     margin-left: 5%;
     text-align: left;
+    
 }
 .Zones{
     color: #1f3361;
@@ -461,6 +465,9 @@ p{
     font-weight: bold;
     margin-left: 3%;
     margin-top: 5%;
+    position: relative;
+    display: inline-block
+
 }
 #crea-channel-arrow {
     margin: 3%;
@@ -642,8 +649,27 @@ p{
     box-shadow: rgba(0,0,0,.125);
 }
 
-  }
+  
 
   .mini{
     left: -130px;
   }
+   #navbar-style{
+  /* justify-content: space-around; */
+  bottom: 0%;
+  display: flex;
+}
+/* .nav-buttons{
+    font-size: 18px;
+
+}  */
+/* ul{
+    top: 50%;
+    left:50%;
+    display: flex;
+
+}
+
+ul li{
+    list-style: none;
+} */

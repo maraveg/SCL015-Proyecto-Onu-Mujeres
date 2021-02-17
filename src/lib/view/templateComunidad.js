@@ -1,11 +1,12 @@
 export const community = () => {
     const divCommunity = document.createElement("div");
     const viewCommunity = `
-				<div class:"logos"> 
-				<img  id="oportunidad-logo" src="./assets/logo.png"></div>
 				<div class="community-arrow">
+				<a class="navbar-brand" href="#/channels">
 				<img src="./assets/left-arrow.png" id="icon-arrow">
 				<p id="text-community">Comunidad</p>
+				</a>
+				
 				</div>
 				<p id="text-zone">¡Selecciona una zona y comunícate
 				con más mujeres como tú!</p>
