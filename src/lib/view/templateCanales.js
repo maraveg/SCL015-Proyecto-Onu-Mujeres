@@ -2,11 +2,13 @@ export const channels = () => {
   const divChannels = document.createElement("div");
   const viewChannels = `
       <div class:"logos"> 
-      <img  id="oportunidad-logo" src="./assets/logo.png"></div>
-      <a href="#/menu"><input type="image" id="Logo-TuOportunidad"></a>
+      <img  id="oportunidad-logo" src="./assets/logo.png">
+      <a href="#/menu"><img type="image" id="user-img" src="./assets/profile-img1.png"></a>
+      </div>
+      
       <img src="" alt="">
       <p id="text-channel">Canales</p>
-      <a href="#/createchannel">+ Crear Canal</a><br>
+      <a href="#/createchannel"><img src="./assets/plus-pink.png" id="plus-pink"></a><br>
       <input type="search" class="search-channel">
       <div id="Box-channels"></div>
       <img src="" alt="" id="image-Usuaria">
@@ -35,10 +37,10 @@ const displayChannels = (container, db) => {
       outputData.innerHTML = ""
       querySnapshot.forEach((doc) => {
         outputData.innerHTML += `
-      <div id="channel-print" class"channel-cont">
-      <img src="" alt="" class"channel-img">
-      <a href="#/posts" class"channel-title">#${doc.data().Title}</a>
-      <p id="channel-print" class"channel-description">${doc.data().Description}</p>
+      <div class="new-channel-cont">
+      <img type="image" class="undraw_img" src="./assets/undraw_universe.png">
+      <a href="#/posts" class="new-channel-tittle">#${doc.data().Title}</a>
+      <p id="channel-print" class="new-channel-description">${doc.data().Description}</p>
     </div>
       `;
         console.log(doc.data());
