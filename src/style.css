@@ -564,3 +564,7 @@ button {
   .navbar-brand {
     width: 60%;
   }
+
+  .mini{
+    left: -130px;
+  }
