@@ -35,18 +35,17 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(signUp());
       break;
     case '#/channels':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(channels());
       containerRoot.appendChild(navBar());
       break;
       case '#/createchannel':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(createChannels());
       containerRoot.appendChild(createChannelCard());
       break;
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
-      break;
-    case '#/menu':
-      containerRoot.appendChild(menu());
       break;
     case '#/language':
       containerRoot.appendChild(language());
@@ -56,18 +55,22 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(navBar());
       break;
     case '#/community':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(community());
       containerRoot.appendChild(navBar());
       break;
     case '#/north':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(north());
       containerRoot.appendChild(navBar());
       break;
     case '#/center':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(center());
       containerRoot.appendChild(navBar());
       break;
     case '#/south':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(south());
       containerRoot.appendChild(navBar());
       break;
