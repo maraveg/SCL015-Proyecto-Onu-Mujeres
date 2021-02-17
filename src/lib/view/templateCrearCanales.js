@@ -49,8 +49,7 @@ export const createChannelCard = () => {
 
     db.collection("channels").add({
       Title: title,
-      Description: description
-    })
+      Description: description})
       .then(function (docRef) {
         console.log("Document written with ID: ", docRef.id);
         window.location.href = '#/channels'
