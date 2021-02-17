@@ -12,7 +12,7 @@ Body{
     position: relative;
     display: inline-block;
 }
-.fondo-welcome{
+.fondo-welcome{ 
     width: 100%;
     position: fixed;
     opacity: 0.6;
@@ -542,3 +542,98 @@ p{
     box-shadow: rgba(0,0,0,.125);
 }
 
+#user-img{
+    margin-left: 25%;
+    height: 60px;
+}
+
+/* Nav Bar superior */
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
+}
+
+.profileimg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: blue;
+    /* commented for demo
+    float: left;
+    margin-left: 125px;
+    margin-top: 20px;
+    */
+
+    /*for demo*/
+    display:inline-block;
+    vertical-align:middle;
+}
+.profileimg img{
+    width:100%;
+    height: 100%;
+}
+.navigation-bar .dropdown-toggle::after {
+    display: none;
+}
+.navigation-bar .navbar-brand img {
+    margin-top: 5%;
+    margin-bottom: 10%;
+    width: 90%;
+    margin-left: 3%;
+
+}
+.bg-lightgray {
+    background-color: #fafafa;
+}
+.navbar-brand {
+    width: 60%;
+}
+
+  /* Página de editar perfil*/
+
+.arrow-img-profile{
+    margin: 3%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+#arrow-profile{
+    width: 16px;
+    margin-top: 3%;
+}
+#edit-profile{
+    font-size: 18px;
+    color: #1f3361;
+    font-weight: bold;
+    margin-top: 5%;
+
+}
+#img-profile{
+    width: 100px;
+    margin-left: 38%;
+}
+.ph-edit-profile{
+    margin-left: 5%;
+    border-radius: 48px;
+    width: 88%;
+    height: 35px;
+    margin-top: 5%;
+}
+.select-edit-profile{
+    margin-left: 5%;
+    border-radius: 48px;
+    width: 88%;
+    height: 34px;
+    margin-top: 5%;
+}
+#save-changes{
+    background-color: #de7c88;
+    color: white;
+    border-radius: 48px;
+    margin-top: 10%;
+    margin-left: 22%;
+    height: 42px;
+    width: 200px;
+    box-shadow: rgba(0,0,0,.125);
+}

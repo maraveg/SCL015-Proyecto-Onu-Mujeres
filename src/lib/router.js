@@ -35,53 +35,56 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(signUp());
       break;
     case '#/channels':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(channels());
       containerRoot.appendChild(navBar());
       break;
       case '#/createchannel':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(createChannels());
       containerRoot.appendChild(createChannelCard());
       break;
     case '#/resetpassword':
       containerRoot.appendChild(passwordReset());
       break;
-      case '#/menu':
-      containerRoot.appendChild(menu());
-      break;
-      case '#/language':
+    case '#/language':
       containerRoot.appendChild(language());
       break;
-      case '#/editprofile':
+    case '#/editprofile':
       containerRoot.appendChild(editProfile());
       containerRoot.appendChild(navBar());
       break;
-      case '#/community':
+    case '#/community':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(community());
       containerRoot.appendChild(navBar());
       break;
-      case '#/north':
+    case '#/north':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(north());
       containerRoot.appendChild(navBar());
       break;
-      case '#/center':
+    case '#/center':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(center());
       containerRoot.appendChild(navBar());
       break;
-      case '#/south':
+    case '#/south':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(south());
       containerRoot.appendChild(navBar());
       break;
-      case '#/profile':
+    case '#/profile':
       containerRoot.appendChild(profile());
       containerRoot.appendChild(navBar());
       break;
-      case '#/send':
-        containerRoot.appendChild(message());
-        break;
-        case '#/inbox':
-        containerRoot.appendChild(inbox());
-        containerRoot.appendChild(navBar());
-        break;
+    case '#/send':
+      containerRoot.appendChild(message());
+      break;
+    case '#/inbox':
+      containerRoot.appendChild(inbox());
+      containerRoot.appendChild(navBar());
+      break;
     default:
       containerRoot.innerHTML = `<h2>Oops! 404: Not found</h2>  <img src="./assets/front-end.png" id="front-end">`;
   }

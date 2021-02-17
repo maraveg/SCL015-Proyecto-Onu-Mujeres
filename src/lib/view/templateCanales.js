@@ -2,11 +2,6 @@ export const channels = () => {
   const divChannels = document.createElement("div");
   const viewChannels = `
       <div class:"logos"> 
-      <img  id="oportunidad-logo" src="./assets/logo.png">
-      <a href="#/menu"><img type="image" id="user-img" src="./assets/profile-img1.png"></a>
-      </div>
-      
-      <img src="" alt="">
       <p id="text-channel">Canales</p>
       <a href="#/createchannel"><img src="./assets/plus-pink.png" id="plus-pink"></a><br>
       <input type="search" class="search-channel">
