@@ -14,7 +14,7 @@ export const menu = () => {
                   <img src="./assets/user_saraGutierrez.jpg" width="40px" />
                 </div>
               </a>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul id="dropdown-menu" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="#/editprofile">Configurar perfil</a></li>
                 <li><a class="dropdown-item" href="#/language">Configurar idioma</a></li>
                 <li><a class="dropdown-item" href="#/inbox">Ayuda</a></li>

@@ -1,8 +1,6 @@
 export const community = () => {
     const divCommunity = document.createElement("div");
     const viewCommunity = `
-				<div class:"logos"> 
-				<img  id="oportunidad-logo" src="./assets/logo.png"></div>
 				<div class="community-arrow">
 				<img src="./assets/left-arrow.png" id="icon-arrow">
 				<p id="text-community">Comunidad</p>
