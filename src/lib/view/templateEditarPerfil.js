@@ -23,7 +23,7 @@ export const editProfile = () => {
         <button id="save-changes">Guardar Cambios</button>
     `;
     divEditProfile.innerHTML = viewEditProfile;
-    const loginForm = divEditProfile.querySelector('#edit-profile');
+    const loginForm = divEditProfile.querySelector('#save-changes');
     loginForm.addEventListener('click', () => {
       window.location.href = '#/channels';
     })

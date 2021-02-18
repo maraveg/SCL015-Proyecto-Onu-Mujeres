@@ -30,9 +30,14 @@ export const signUp = () => {
     `;
     divSignUp.innerHTML = viewSignUp;
     const loginForm = divSignUp.querySelector('#signup-button');
-    loginForm.addEventListener('click', createAccount) 
+    loginForm.addEventListener('click', () => {
+      window.location.href = '#/login';
+    })
+    const register = divSignUp.querySelector('#signup-button');
+    register.addEventListener('click', createAccount)
     return divSignUp;
 };
+
 
 export const createAccount = () => {
   let email = document.querySelector('#text-mail').value;
