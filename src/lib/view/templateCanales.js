@@ -43,4 +43,4 @@ const displayChannels = (container, db) => {
       });
   
     });
-  }
+}

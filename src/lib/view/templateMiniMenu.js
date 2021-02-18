@@ -4,8 +4,8 @@ export const menu = () => {
       </style>
       <nav class="navbar navbar-expand-lg navbar-dark bg-lightgray">
       <div class="container-fluid navigation-bar">
-        <a class="navbar-brand" href="#">
-          <img src="./assets/logo.png" />
+        <a class="navbar-brand" href="#/channels">
+          <img src="./assets/logo.png">
         </a>
         <ul class="navbar-nav">
             <li class="nav-item dropdown">
@@ -14,7 +14,7 @@ export const menu = () => {
                   <img src="./assets/user_saraGutierrez.jpg" width="40px" />
                 </div>
               </a>
-              <ul id="dropdown-menu" class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
+              <ul class="dropdown-menu mini" aria-labelledby="navbarDarkDropdownMenuLink">
                 <li><a class="dropdown-item" href="#/editprofile">Configurar perfil</a></li>
                 <li><a class="dropdown-item" href="#/language">Configurar idioma</a></li>
                 <li><a class="dropdown-item" href="#/inbox">Ayuda</a></li>

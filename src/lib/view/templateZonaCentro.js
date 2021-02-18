@@ -1,7 +1,12 @@
 export const center = () => {
     const divCenter = document.createElement("div");
     const viewCenter = `
-        <p>Comunidad</p>
+        <div class="community-arrow">
+        <a class="navbar-brand" href="#/community">
+        <img src="./assets/left-arrow.png" id="icon-arrow">
+        <p id="text-community">Comunidad</p>
+        </a>
+        </div>
         <p>¡Bienvenida a la zona centro!</p>
         <input type="search">
         <p>Zona Centro</p>

@@ -1,7 +1,12 @@
 export const north = () => {
     const divNorth = document.createElement("div");
     const viewNorth = `
-        <p>Comunidad</p>
+        <div class="community-arrow">
+        <a class="navbar-brand" href="#/community">
+        <img src="./assets/left-arrow.png" id="icon-arrow">
+        <p id="text-community">Comunidad</p>
+        </a>
+        </div>
         <p>¡Bienvenida a la zona norte!</p>
         <input type="search">
         <p>Zona Norte</p>

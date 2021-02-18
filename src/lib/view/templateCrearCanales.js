@@ -74,8 +74,10 @@ export const createChannels = () => {
   const divCreteChannels = document.createElement("div");
   const viewCreteChannels = `
       <div id="crea-channel-arrow">
+      <a class="navbar-brand" href="#/channels">
       <img src="./assets/left-arrow.png" id="channel-arrow">
       <p id="text-create">Crea un nuevo canal</p>
+      </a>
       </div>
       <img src="" alt="">
       <div id="Box-channels"></div>

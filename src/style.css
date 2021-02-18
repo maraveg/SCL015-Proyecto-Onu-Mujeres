@@ -394,12 +394,16 @@ select, option{
     font-weight: bold;
     margin-left: 3%;
     margin-top: 7%;
+    position: relative;
+    display: inline-block;
+
 }
 #text-zone{
     color: #4f4f4f;
     font-size: 18px;
     margin-left: 5%;
     text-align: left;
+    
 }
 .Zones{
     color: #1f3361;
@@ -461,6 +465,9 @@ p{
     font-weight: bold;
     margin-left: 3%;
     margin-top: 5%;
+    position: relative;
+    display: inline-block
+
 }
 #crea-channel-arrow {
     margin: 3%;
@@ -581,13 +588,19 @@ p{
     margin-bottom: 10%;
     width: 90%;
     margin-left: 3%;
-
+}
+.dropdown-item{
+    font-size: 16px;
 }
 .bg-lightgray {
     background-color: #fafafa;
 }
 .navbar-brand {
     width: 60%;
+}
+
+.mini{
+    left: -135px;
 }
 
   /* Página de editar perfil*/
@@ -673,5 +686,43 @@ p{
     height: 42px;
     border-radius: 20px;
     font-size: 18px;
-  
+}
+
+.mini{
+    left: -130px;
+  }
+
+#navbar-style{
+    bottom: 0%;
+    position: fixed;
+    height: 50px;
+    background-color: #fafafa;
+
+}
+
+ ul{
+    top: 50%;
+    left:50%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+}
+
+ul li{
+    list-style: none;
+} 
+
+ul li a {
+    position: relative;
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li a:focus{
+    color: #de7c88;
 }
