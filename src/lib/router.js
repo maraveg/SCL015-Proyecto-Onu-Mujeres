@@ -48,6 +48,7 @@ export const showTemplate = (hash) => {
       containerRoot.appendChild(passwordReset());
       break;
     case '#/language':
+      containerRoot.appendChild(menu());
       containerRoot.appendChild(language());
       break;
     case '#/editprofile':

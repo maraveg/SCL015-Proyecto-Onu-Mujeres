@@ -588,7 +588,9 @@ p{
     margin-bottom: 10%;
     width: 90%;
     margin-left: 3%;
-
+}
+.dropdown-item{
+    font-size: 16px;
 }
 .bg-lightgray {
     background-color: #fafafa;
@@ -598,7 +600,7 @@ p{
 }
 
 .mini{
-    left: -130px;
+    left: -135px;
 }
 
   /* Página de editar perfil*/
@@ -655,21 +657,36 @@ p{
     left: -130px;
   }
    #navbar-style{
-  /* justify-content: space-around; */
-  bottom: 0%;
-  display: flex;
-}
-/* .nav-buttons{
-    font-size: 18px;
+    bottom: 0%;
+    position: fixed;
+    height: 50px;
+    background-color: #fafafa;
 
-}  */
-/* ul{
+}
+
+ ul{
     top: 50%;
     left:50%;
+    margin: 0;
+    padding: 0;
     display: flex;
 
 }
 
 ul li{
     list-style: none;
-} */
+} 
+
+ul li a {
+    position: relative;
+    display: block;
+    padding: 0px 10px;
+    text-decoration: none;
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul li a:focus{
+    color: #de7c88;
+}
