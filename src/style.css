@@ -651,12 +651,48 @@ p{
     box-shadow: rgba(0,0,0,.125);
 }
 
-  
+/*Página cambiar el idioma*/
 
-  .mini{
+#language-settings{
+    color: #1f3361;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#choose-language{
+    color: #1f3361;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#choose-language-again{
+    color: #1f3361;
+    font-size: 18px;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+.input-language{
+    color: #1f3361;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+#language-button{
+    margin-left: 28%;
+    margin-top: 10%;
+    background-color: #de7c88;
+    color: white;
+    width: 143px;
+    height: 42px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+.mini{
     left: -130px;
   }
-   #navbar-style{
+
+#navbar-style{
     bottom: 0%;
     position: fixed;
     height: 50px;
